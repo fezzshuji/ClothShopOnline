@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 // define structure for accessing database
-//const { Pool } = require('pg');
+const { Pool } = require('pg');
 const connDB = require("./connDB");
 const pool = connDB.getPool();
 
